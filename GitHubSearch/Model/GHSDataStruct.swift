@@ -1,5 +1,5 @@
 //
-//  DataStruct.swift
+//  GHSDataStruct.swift
 //  GitHubSearch
 //
 //  Created by Aleksandr Aniskin on 11.05.2021.

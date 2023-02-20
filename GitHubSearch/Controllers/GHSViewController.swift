@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GHSViewController.swift
 //  GitHubSearch
 //
 //  Created by Aleksandr Aniskin on 11.05.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class GHSViewController: UIViewController {
 
     @IBOutlet weak var UsersOrReposSearch: UISegmentedControl!
     @IBOutlet weak var SearchTextField: UITextField!
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             userName = SearchTextField.text!
             self.SearchTextField.text = ""
             if userName != "" {
-                DataLoader().loadUserRepos(userName) {
+                GHSDataLoader().loadUserRepos(userName) {
                     reposData in
                     self.reposData = reposData
                     self.ReposTableView.reloadData()
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             reposName = SearchTextField.text!
             self.SearchTextField.text = ""
             if reposName != "" {
-                DataLoader().loadSearchRepos(reposName) {
+                GHSDataLoader().loadSearchRepos(reposName) {
                     searchData in
                     self.searchData = searchData
                     self.ReposTableView.reloadData()
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: TableView Data Source
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension GHSViewController: UITableViewDataSource, UITableViewDelegate {
     
     // Number of Rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -111,7 +111,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     // Cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reposCell", for: indexPath) as! ReposTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reposCell", for: indexPath) as! GHSReposTableViewCell
         
         switch UsersOrReposSearch.selectedSegmentIndex {
             case 0:
@@ -157,7 +157,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 //MARK: Create URL
-extension ViewController {
+extension GHSViewController {
     public func createUrlForUserData(forUserName userName: String) -> String {
         guard let urlString = "https://api.github.com/users/\(userName)/repos".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return "Somthing wrong" }
         return urlString

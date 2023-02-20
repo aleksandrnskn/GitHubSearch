@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231C924929A3B31E00CDCF0F /* GHSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C924829A3B31E00CDCF0F /* GHSRequest.swift */; };
+		231C924B29A3B34D00CDCF0F /* GHSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C924A29A3B34D00CDCF0F /* GHSService.swift */; };
 		7B8EC6E6264A60FE004312E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6E5264A60FE004312E9 /* AppDelegate.swift */; };
 		7B8EC6E8264A60FE004312E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6E7264A60FE004312E9 /* SceneDelegate.swift */; };
-		7B8EC6EA264A60FE004312E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6E9264A60FE004312E9 /* ViewController.swift */; };
+		7B8EC6EA264A60FE004312E9 /* GHSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6E9264A60FE004312E9 /* GHSViewController.swift */; };
 		7B8EC6ED264A60FE004312E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EC6EB264A60FE004312E9 /* Main.storyboard */; };
 		7B8EC6EF264A6102004312E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EC6EE264A6102004312E9 /* Assets.xcassets */; };
 		7B8EC6F2264A6102004312E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8EC6F0264A6102004312E9 /* LaunchScreen.storyboard */; };
-		7B8EC700264B0503004312E9 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6FF264B0503004312E9 /* DataLoader.swift */; };
-		7B8EC705264B052D004312E9 /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC704264B052D004312E9 /* DataStruct.swift */; };
-		7B8EC734265D5E85004312E9 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC733265D5E85004312E9 /* ReposTableViewCell.swift */; };
+		7B8EC700264B0503004312E9 /* GHSDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC6FF264B0503004312E9 /* GHSDataLoader.swift */; };
+		7B8EC705264B052D004312E9 /* GHSDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC704264B052D004312E9 /* GHSDataStruct.swift */; };
+		7B8EC734265D5E85004312E9 /* GHSReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8EC733265D5E85004312E9 /* GHSReposTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231C924829A3B31E00CDCF0F /* GHSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSRequest.swift; sourceTree = "<group>"; };
+		231C924A29A3B34D00CDCF0F /* GHSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSService.swift; sourceTree = "<group>"; };
 		7B8EC6E2264A60FE004312E9 /* GitHubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8EC6E5264A60FE004312E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8EC6E7264A60FE004312E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B8EC6E9264A60FE004312E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B8EC6E9264A60FE004312E9 /* GHSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSViewController.swift; sourceTree = "<group>"; };
 		7B8EC6EC264A60FE004312E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B8EC6EE264A6102004312E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B8EC6F1264A6102004312E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B8EC6F3264A6102004312E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B8EC6FF264B0503004312E9 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
-		7B8EC704264B052D004312E9 /* DataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
-		7B8EC733265D5E85004312E9 /* ReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewCell.swift; sourceTree = "<group>"; };
+		7B8EC6FF264B0503004312E9 /* GHSDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSDataLoader.swift; sourceTree = "<group>"; };
+		7B8EC704264B052D004312E9 /* GHSDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSDataStruct.swift; sourceTree = "<group>"; };
+		7B8EC733265D5E85004312E9 /* GHSReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHSReposTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231C924529A3B28700CDCF0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B8EC733265D5E85004312E9 /* GHSReposTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		231C924629A3B29F00CDCF0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B8EC6FB264B0453004312E9 /* Delegates */,
+				7B8EC6FD264B047D004312E9 /* Storyboards */,
+				7B8EC6EE264A6102004312E9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		231C924729A3B2C900CDCF0F /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7B8EC6FF264B0503004312E9 /* GHSDataLoader.swift */,
+				231C924829A3B31E00CDCF0F /* GHSRequest.swift */,
+				231C924A29A3B34D00CDCF0F /* GHSService.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
 		7B8EC6D9264A60FE004312E9 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +94,12 @@
 		7B8EC6E4264A60FE004312E9 /* GitHubSearch */ = {
 			isa = PBXGroup;
 			children = (
-				7B8EC6FB264B0453004312E9 /* Delegates */,
-				7B8EC6FD264B047D004312E9 /* Storyboards */,
+				231C924629A3B29F00CDCF0F /* Resources */,
+				231C924529A3B28700CDCF0F /* Views */,
 				7B8EC6FC264B046A004312E9 /* Controllers */,
+				231C924729A3B2C900CDCF0F /* APIClient */,
 				7B8EC6FE264B04CB004312E9 /* Model */,
-				7B8EC6EE264A6102004312E9 /* Assets.xcassets */,
 				7B8EC6F3264A6102004312E9 /* Info.plist */,
-				7B8EC733265D5E85004312E9 /* ReposTableViewCell.swift */,
 			);
 			path = GitHubSearch;
 			sourceTree = "<group>";
@@ -85,7 +116,7 @@
 		7B8EC6FC264B046A004312E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7B8EC6E9264A60FE004312E9 /* ViewController.swift */,
+				7B8EC6E9264A60FE004312E9 /* GHSViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,18 +133,9 @@
 		7B8EC6FE264B04CB004312E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7B8EC703264B0512004312E9 /* Data */,
-				7B8EC6FF264B0503004312E9 /* DataLoader.swift */,
+				7B8EC704264B052D004312E9 /* GHSDataStruct.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7B8EC703264B0512004312E9 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				7B8EC704264B052D004312E9 /* DataStruct.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,12 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B8EC705264B052D004312E9 /* DataStruct.swift in Sources */,
-				7B8EC700264B0503004312E9 /* DataLoader.swift in Sources */,
-				7B8EC6EA264A60FE004312E9 /* ViewController.swift in Sources */,
+				7B8EC705264B052D004312E9 /* GHSDataStruct.swift in Sources */,
+				7B8EC700264B0503004312E9 /* GHSDataLoader.swift in Sources */,
+				7B8EC6EA264A60FE004312E9 /* GHSViewController.swift in Sources */,
 				7B8EC6E6264A60FE004312E9 /* AppDelegate.swift in Sources */,
 				7B8EC6E8264A60FE004312E9 /* SceneDelegate.swift in Sources */,
-				7B8EC734265D5E85004312E9 /* ReposTableViewCell.swift in Sources */,
+				7B8EC734265D5E85004312E9 /* GHSReposTableViewCell.swift in Sources */,
+				231C924B29A3B34D00CDCF0F /* GHSService.swift in Sources */,
+				231C924929A3B31E00CDCF0F /* GHSRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

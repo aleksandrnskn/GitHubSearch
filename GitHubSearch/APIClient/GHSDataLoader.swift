@@ -1,5 +1,5 @@
 //
-//  DataLoader.swift
+//  GHSDataLoader.swift
 //  GitHubSearch
 //
 //  Created by Aleksandr Aniskin on 11.05.2021.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-class DataLoader {
+class GHSDataLoader {
     
     func loadUserRepos(_ userName: String, completion: @escaping ([Repos]) -> Void) {
         
-        let urlString = ViewController().createUrlForUserData(forUserName: userName)
+        let urlString = GHSViewController().createUrlForUserData(forUserName: userName)
         print(userName)
         print(urlString)
         let urlGitHub = URL(string: urlString)!
@@ -48,7 +48,7 @@ class DataLoader {
     
     func loadSearchRepos(_ reposName: String, completion: @escaping (searchResult) -> Void) {
         
-        let urlString = ViewController().createUrlForReposData(forReposName: reposName)
+        let urlString = GHSViewController().createUrlForReposData(forReposName: reposName)
         print(reposName)
         print(urlString)
         let urlGitHub = URL(string: urlString)!
