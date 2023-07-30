@@ -135,18 +135,20 @@ extension GHSViewController: UITableViewDataSource, UITableViewDelegate {
                     return
                 }
                 print(url)
-                SearchResultWebView.load(URLRequest(url: url))
                 SearchResultWebView.isHidden = false
                 WebNavigationBar.isHidden = false
+            
+                SearchResultWebView.load(URLRequest(url: url))
                 WebNavigationBarTitle.title = reposData[indexPath.row].name
             case 1:
                 guard let url = URL(string: searchData.items[indexPath.row].html_url) else {
                     return
                 }
                 print(url)
-                SearchResultWebView.load(URLRequest(url: url))
                 SearchResultWebView.isHidden = false
                 WebNavigationBar.isHidden = false
+                
+                SearchResultWebView.load(URLRequest(url: url))
                 WebNavigationBarTitle.title = searchData.items[indexPath.row].name
             default:
                 return
